@@ -4,5 +4,4 @@ from .views import CarList, CarDetail
 urlpatterns = [
     path('', CarList.as_view(), name='car-list'),
     path('<int:pk>/', CarDetail.as_view(), name='car-detail'),
-    path('api-auth/', include('rest_framework.urls')),
 ]
